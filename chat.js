@@ -1,24 +1,23 @@
 // Chat functionality
-// const configuredSocketUrl = window.APP_CONFIG && window.APP_CONFIG.SOCKET_SERVER_URL;
-// const isLocalhost =
-//     window.location.hostname === 'localhost' ||
-//     window.location.hostname === '127.0.0.1';
+const configuredSocketUrl =
+  window.APP_CONFIG && window.APP_CONFIG.SOCKET_SERVER_URL;
+const isLocalhost =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
 
-// const socketUrl =
-//     configuredSocketUrl && !configuredSocketUrl.includes('your-railway-domain')
-//         ? configuredSocketUrl
-//         : isLocalhost
-//             ? 'http://localhost:3000'
-//             : null;
+const socketUrl =
+  configuredSocketUrl && !configuredSocketUrl.includes("your-railway-domain")
+    ? configuredSocketUrl
+    : isLocalhost
+      ? "http://localhost:3000"
+      : null;
 
-// if (!socketUrl) {
-//     throw new Error(
-//         'SOCKET_SERVER_URL is missing. Set the Railway backend URL in public/config.js before deploying the frontend.'
-//     );
-// }
-const socket = io("https://chat-backend-production.up.railway.app", {
-  transports: ["websocket", "polling"],
-});
+if (!socketUrl) {
+  throw new Error(
+    "SOCKET_SERVER_URL is missing. Set the Railway backend URL in public/config.js before deploying the frontend.",
+  );
+}
+
 const socket = io(socketUrl, {
   transports: ["websocket", "polling"],
 });
