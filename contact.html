@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - ChatConnect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>ChatConnect</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/chat">Chat</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Have questions, feedback, or need support? We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="business">Business Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p>support@chatconnect.com</p>
+                        <p>business@chatconnect.com</p>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>Available 24/7 in our chat rooms</p>
+                        <a href="/chat" class="btn btn-secondary">Start Chat</a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">Discord</a>
+                            <a href="#" class="social-link">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Office</h3>
+                        <p>123 Tech Street<br>San Francisco, CA 94105<br>United States</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I get started with ChatConnect?</h3>
+                    <p>Simply visit our website and click "Start Chatting" to join a chat room. No registration required!</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Is ChatConnect free to use?</h3>
+                    <p>Yes! ChatConnect is completely free for all users. We may introduce premium features in the future.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are my conversations private?</h3>
+                    <p>ChatConnect uses secure WebSocket connections. However, please note that messages in public rooms are visible to all participants.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I create my own chat rooms?</h3>
+                    <p>Absolutely! Use the "New Room" button in the chat interface to create custom rooms for your discussions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What devices are supported?</h3>
+                    <p>ChatConnect works on any modern web browser on desktop, tablet, or mobile devices.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I report inappropriate behavior?</h3>
+                    <p>Use the report feature in chat rooms or contact our support team directly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ChatConnect</h3>
+                    <p>Real-time communication made simple and beautiful.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/chat">Chat</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Real-time Messaging</li>
+                        <li>Secure Communication</li>
+                        <li>Cross-Platform Support</li>
+                        <li>Community Tools</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ChatConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
